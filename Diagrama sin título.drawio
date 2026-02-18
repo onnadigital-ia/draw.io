@@ -1,9 +1,158 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.4.0">
   <diagram name="Página-1" id="Gx0XBEr7yKfjjXgHLNzT">
-    <mxGraphModel>
+    <mxGraphModel dx="1426" dy="743" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="coda_doc" parent="1" style="swimlane;html=1;startSize=20;horizontal=1;container=1;collapsible=0;rounded=1;arcSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="CODA DOC (HUB CENTRAL)" vertex="1">
+          <mxGeometry height="740" width="760" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="layer_sync" parent="coda_doc" style="swimlane;html=1;startSize=20;horizontal=1;container=1;collapsible=0;rounded=0;fillColor=#ffe6cc;strokeColor=#d79b00;dashed=1" value="CAPA DE DATOS EXTERNOS (SYNC TABLES / PACKS)" vertex="1">
+          <mxGeometry height="230" width="720" x="20" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sync_gcal" parent="layer_sync" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;strokeColor=#82b366;" value="SYNC: GCalendar&#xa;(Eventos)" vertex="1">
+          <mxGeometry height="60" width="110" x="30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sync_trans" parent="layer_sync" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#d5e8d4;strokeColor=#82b366;" value="SYNC: Transkriptor&#xa;(Textos)" vertex="1">
+          <mxGeometry height="60" width="110" x="160" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sync_gitlab" parent="layer_sync" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#e1d5e7;strokeColor=#9673a6;" value="SYNC: GitLab&#xa;(Issues / MR / Projects)" vertex="1">
+          <mxGeometry height="60" width="140" x="340" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sync_dolibarr" parent="layer_sync" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#f8cecc;strokeColor=#b85450;" value="SYNC: Dolibarr&#xa;(Terceros / Facturas)" vertex="1">
+          <mxGeometry height="60" width="140" x="540" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="note_sync" parent="layer_sync" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontStyle=2" value="Estas tablas NO se editan manualmente, se actualizan solas." vertex="1">
+          <mxGeometry height="30" width="300" x="220" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="layer_ops" parent="coda_doc" style="swimlane;html=1;startSize=20;horizontal=1;container=1;collapsible=0;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" value="CAPA OPERATIVA (TABLAS MAESTRAS)" vertex="1">
+          <mxGeometry height="420" width="720" x="20" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="db_proyectos" parent="layer_ops" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffcc99;strokeColor=#36393d;fontStyle=1" value="DB PROYECTOS&#xa;(Contenedor ONNA / EXE)" vertex="1">
+          <mxGeometry height="80" width="160" x="520" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="db_tareas" parent="layer_ops" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffcc99;strokeColor=#36393d;fontStyle=1" value="DB TAREAS (MASTER)&#xa;Columna: Tipo (Ticket/Dev)&#xa;Columna: Empresa (EXE/ONNA)" vertex="1">
+          <mxGeometry height="100" width="200" x="240" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="auto_gcal" parent="layer_ops" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffc0;strokeColor=#ff0000;fontSize=10;" value="Auto: Nuevo evento&#xa;→ Crea Tarea" vertex="1">
+          <mxGeometry height="60" width="100" x="40" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_proj_task" edge="1" parent="layer_ops" source="db_tareas" target="db_proyectos">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="210" as="sourcePoint" />
+            <mxPoint x="530" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_rel1" connectable="0" parent="rel_proj_task" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="Asignada a" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="btn_dolibarr" parent="layer_ops" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" value="BTN: Crear Factura/Pedido" vertex="1">
+          <mxGeometry height="30" width="140" x="540" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="btn_trans" parent="layer_ops" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" value="BTN: Invitar Bot" vertex="1">
+          <mxGeometry height="30" width="100" x="40" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="link_gcal_act" edge="1" parent="layer_ops" source="auto_gcal" target="db_tareas">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_gcal" edge="1" parent="coda_doc" source="sync_gcal" target="auto_gcal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="link_trans" edge="1" parent="coda_doc" source="sync_trans" target="db_tareas">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="110" />
+              <mxPoint x="160" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_trans" connectable="0" parent="link_trans" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Lookup: Transcripción" vertex="1">
+          <mxGeometry relative="1" x="0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link_gitlab" edge="1" parent="coda_doc" source="sync_gitlab" target="db_proyectos">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="240" />
+              <mxPoint x="350" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_git" connectable="0" parent="link_gitlab" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Relación Proyectos" vertex="1">
+          <mxGeometry relative="1" x="0.1" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="link_doli" edge="1" parent="coda_doc" source="sync_dolibarr" target="db_proyectos">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="410" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_doli" connectable="0" parent="link_doli" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Cliente vinculado" vertex="1">
+          <mxGeometry relative="1" x="0.2" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out_trans" edge="1" parent="coda_doc" source="btn_trans" target="sync_trans">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-60" y="480" />
+              <mxPoint x="-60" y="310" />
+              <mxPoint x="35" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_out_trans" connectable="0" parent="out_trans" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="API Join Meet" vertex="1">
+          <mxGeometry relative="1" x="0.1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="out_dolibarr" edge="1" parent="coda_doc" source="btn_dolibarr" target="sync_dolibarr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_chatwoot" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="CHATWOOT" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_discord" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="DISCORD" vertex="1">
+          <mxGeometry height="60" width="120" x="20" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ext_amelia" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="AMELIA / GCAL" vertex="1">
+          <mxGeometry height="50" width="120" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="flow_cw" edge="1" parent="1" source="ext_chatwoot" target="db_tareas">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="490" />
+              <mxPoint x="180" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_cw" connectable="0" parent="flow_cw" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="API: Crea Ticket (EXE)" vertex="1">
+          <mxGeometry relative="1" x="-0.3" y="2" as="geometry">
+            <mxPoint x="20" y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_dc" edge="1" parent="1" source="ext_discord" target="db_tareas">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="580" />
+              <mxPoint x="200" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lbl_dc" connectable="0" parent="flow_dc" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" value="Bot: Crea Tarea (ONNA)" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="3" as="geometry">
+            <mxPoint x="20" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow_amelia" edge="1" parent="1" source="ext_amelia" target="sync_gcal">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
