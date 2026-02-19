@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.4.0">
   <diagram name="Página-1" id="Gx0XBEr7yKfjjXgHLNzT">
-    <mxGraphModel dx="3027" dy="1351" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1233" dy="550" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,10 +17,10 @@
           <mxGeometry height="60" width="160" x="80" y="100" as="geometry" />
         </mxCell>
         <mxCell id="discord" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontStyle=1" value="DISCORD&#xa;(Peticiones Cliente)" vertex="1">
-          <mxGeometry height="60" width="160" x="960" y="100" as="geometry" />
+          <mxGeometry height="60" width="160" x="1020" y="100" as="geometry" />
         </mxCell>
         <mxCell id="gitlab" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontStyle=1" value="GITLAB (EXTERNO)&#xa;(Código e Issues)" vertex="1">
-          <mxGeometry height="60" width="160" x="960" y="220" as="geometry" />
+          <mxGeometry height="60" width="160" x="910" y="190" as="geometry" />
         </mxCell>
         <mxCell id="amelia" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontStyle=1" value="AMELIA / GCAL&#xa;(Citas y Eventos)" vertex="1">
           <mxGeometry height="50" width="140" x="380" y="100" as="geometry" />
@@ -67,23 +67,23 @@
         <mxCell id="e_dc_tar" edge="1" parent="1" source="discord" target="db_tareas">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1040" y="400" />
+              <mxPoint x="1100" y="400" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="l_dc_tar" connectable="0" parent="e_dc_tar" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];backgroundColor=#ffffff;fontStyle=1;fontColor=#8e24aa" value="Bot Crea Tarea&#xa;(Marcada como ONNA)" vertex="1">
           <mxGeometry relative="1" x="-0.4" y="1" as="geometry">
-            <mxPoint x="-50" y="-15" as="offset" />
+            <mxPoint x="-121" y="78" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e_gl_sgl" edge="1" parent="1" source="gitlab" target="sync_gitlab">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1040" y="265" />
+              <mxPoint x="990" y="265" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="e_sgl_pro" edge="1" parent="1" source="sync_gitlab" target="db_proyectos">
+        <mxCell id="e_sgl_pro" edge="1" parent="1" source="db_proyectos" target="sync_gitlab">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="750" y="540" />
@@ -145,6 +145,15 @@
         </mxCell>
         <mxCell id="G27xfmAvAOSw0uuDnlbH-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="proyecto&lt;br&gt;subroyecto&lt;br&gt;hito&lt;br&gt;tarea&lt;br&gt;subtarea&lt;br&gt;area" vertex="1">
           <mxGeometry height="190" width="120" x="530" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-3" edge="1" parent="1" source="G27xfmAvAOSw0uuDnlbH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dolibarr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontStyle=1" value="Presupuesto" vertex="1">
+          <mxGeometry height="60" width="160" x="960" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-6" edge="1" parent="1" source="G27xfmAvAOSw0uuDnlbH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="db_proyectos">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
