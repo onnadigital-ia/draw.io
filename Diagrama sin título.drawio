@@ -17,16 +17,16 @@
           <mxGeometry height="60" width="160" x="80" y="100" as="geometry" />
         </mxCell>
         <mxCell id="discord" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontStyle=1" value="DISCORD&#xa;(Peticiones Cliente)" vertex="1">
-          <mxGeometry height="60" width="160" x="1020" y="100" as="geometry" />
+          <mxGeometry height="60" width="160" x="975" y="210" as="geometry" />
         </mxCell>
         <mxCell id="gitlab" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1bee7;strokeColor=#8e24aa;fontStyle=1" value="GITLAB (EXTERNO)&#xa;(Código e Issues)" vertex="1">
-          <mxGeometry height="60" width="160" x="910" y="190" as="geometry" />
+          <mxGeometry height="50" width="130" x="990" y="110" as="geometry" />
         </mxCell>
         <mxCell id="amelia" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontStyle=1" value="AMELIA / GCAL&#xa;(Citas y Eventos)" vertex="1">
-          <mxGeometry height="50" width="140" x="380" y="100" as="geometry" />
+          <mxGeometry height="50" width="140" x="355" y="100" as="geometry" />
         </mxCell>
         <mxCell id="transkriptor" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#c8e6c9;strokeColor=#388e3c;fontStyle=1" value="TRANSKRIPTOR&#xa;(Transcripciones)" vertex="1">
-          <mxGeometry height="50" width="140" x="660" y="100" as="geometry" />
+          <mxGeometry height="50" width="140" x="510" y="100" as="geometry" />
         </mxCell>
         <mxCell id="coda_box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffecb3;strokeColor=#ffb300;fontStyle=1;fontSize=14;verticalAlign=top;spacingTop=10;dashed=1;" value="ENTORNO CODA DOC" vertex="1">
           <mxGeometry height="520" width="520" x="340" y="180" as="geometry" />
@@ -37,17 +37,14 @@
         <mxCell id="sync_trans" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#ffffff;strokeColor=#666666;" value="Tabla Sync: Transkriptor" vertex="1">
           <mxGeometry height="50" width="140" x="510" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="sync_gitlab" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#ffffff;strokeColor=#666666;" value="Tabla Sync: GitLab&#xa;(Proyectos / Issues)" vertex="1">
+        <mxCell id="sync_gitlab" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#ffffff;strokeColor=#666666;" value="Tabla Sync: GitLab" vertex="1">
           <mxGeometry height="50" width="140" x="680" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="sync_dolibarr" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#ffffff;strokeColor=#666666;" value="Tabla Sync: Dolibarr&#xa;(Clientes / Pagos)" vertex="1">
-          <mxGeometry height="50" width="140" x="370" y="610" as="geometry" />
-        </mxCell>
         <mxCell id="db_tareas" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffcc80;strokeColor=#e65100;fontStyle=1" value="TABLA MAESTRA: TAREAS (Tickets / Dev)&#xa;-------------------------------------------------------&#xa;Selector Empresa: [ EXE ] o [ ONNA ]&#xa;Selector Tipo: [ Ticket ] o [ Tarea/Bug ]" vertex="1">
-          <mxGeometry height="80" width="400" x="400" y="360" as="geometry" />
+          <mxGeometry height="80" width="400" x="400" y="330" as="geometry" />
         </mxCell>
         <mxCell id="db_proyectos" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#ffcc80;strokeColor=#e65100;fontStyle=1" value="TABLA MAESTRA: PROYECTOS&#xa;-------------------------------------------------------&#xa;Selector Empresa: [ EXE ] o [ ONNA ]" vertex="1">
-          <mxGeometry height="80" width="400" x="400" y="500" as="geometry" />
+          <mxGeometry height="80" width="400" x="400" y="520" as="geometry" />
         </mxCell>
         <mxCell id="dolibarr" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcdd2;strokeColor=#c62828;fontStyle=1;fontSize=14;" value="DOLIBARR (ERP)&#xa;Gestión de Presupuestos, Pedidos y Facturas" vertex="1">
           <mxGeometry height="60" width="320" x="440" y="740" as="geometry" />
@@ -55,44 +52,25 @@
         <mxCell id="e_cw_tar" edge="1" parent="1" source="chatwoot" target="db_tareas">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="160" y="400" />
+              <mxPoint x="160" y="370" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="l_cw_tar" connectable="0" parent="e_cw_tar" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];backgroundColor=#ffffff;fontStyle=1;fontColor=#0288d1" value="API Crea Tarea&#xa;(Marcada como EXE)" vertex="1">
           <mxGeometry relative="1" x="-0.4" y="1" as="geometry">
-            <mxPoint x="40" y="-15" as="offset" />
+            <mxPoint x="79" y="62" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e_dc_tar" edge="1" parent="1" source="discord" target="db_tareas">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1100" y="400" />
+              <mxPoint x="1055" y="370" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="l_dc_tar" connectable="0" parent="e_dc_tar" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];backgroundColor=#ffffff;fontStyle=1;fontColor=#8e24aa" value="Bot Crea Tarea&#xa;(Marcada como ONNA)" vertex="1">
           <mxGeometry relative="1" x="-0.4" y="1" as="geometry">
-            <mxPoint x="-121" y="78" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e_gl_sgl" edge="1" parent="1" source="gitlab" target="sync_gitlab">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="990" y="265" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e_sgl_pro" edge="1" parent="1" source="db_proyectos" target="sync_gitlab">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="750" y="540" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="l_sgl_pro" connectable="0" parent="e_sgl_pro" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];backgroundColor=#ffffff;fontSize=10;" value="Lookup Vinculado" vertex="1">
-          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-73" y="-11" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e_am_sgcal" edge="1" parent="1" source="amelia" target="sync_gcal">
@@ -117,34 +95,22 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="e_tar_pro" edge="1" parent="1" source="db_tareas" target="db_proyectos">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="e_tar_pro" edge="1" parent="1" source="db_tareas" style="exitX=0.103;exitY=0.926;exitDx=0;exitDy=0;exitPerimeter=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="439.9999999999999" as="sourcePoint" />
+            <mxPoint x="440" y="525" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="l_tar_pro" connectable="0" parent="e_tar_pro" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];backgroundColor=#ffffff;fontSize=11;fontStyle=1" value="Asignada a" vertex="1">
           <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e_pro_dol" edge="1" parent="1" source="db_proyectos" target="dolibarr">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="l_pro_dol" connectable="0" parent="e_pro_dol" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];backgroundColor=#ffffff;fontStyle=1;fontColor=#c62828;" value="BOTÓN CODA: Crear Factura/Pedido (API)" vertex="1">
-          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="e_dol_sdol" edge="1" parent="1" source="dolibarr" target="sync_dolibarr">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="440" y="710" />
-            </Array>
+            <mxPoint x="-42" y="13" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="e_sdol_pro" edge="1" parent="1" source="sync_dolibarr" target="db_proyectos">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="G27xfmAvAOSw0uuDnlbH-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="proyecto&lt;br&gt;subroyecto&lt;br&gt;hito&lt;br&gt;tarea&lt;br&gt;subtarea&lt;br&gt;area" vertex="1">
-          <mxGeometry height="190" width="120" x="530" y="880" as="geometry" />
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="area?" vertex="1">
+          <mxGeometry height="40" width="120" x="530" y="880" as="geometry" />
         </mxCell>
         <mxCell id="G27xfmAvAOSw0uuDnlbH-3" edge="1" parent="1" source="G27xfmAvAOSw0uuDnlbH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="dolibarr">
           <mxGeometry relative="1" as="geometry" />
@@ -154,6 +120,56 @@
         </mxCell>
         <mxCell id="G27xfmAvAOSw0uuDnlbH-6" edge="1" parent="1" source="G27xfmAvAOSw0uuDnlbH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="db_proyectos">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-9" edge="1" parent="1" source="sync_gitlab" style="endArrow=classic;startArrow=classic;html=1;rounded=0;" target="gitlab" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="750" y="130" />
+            </Array>
+            <mxPoint x="737.22" y="245" as="sourcePoint" />
+            <mxPoint x="762.7755555555557" y="15" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-19" edge="1" parent="1" source="G27xfmAvAOSw0uuDnlbH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="464.9999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-12" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#fad7ac;strokeColor=#b46504;fontStyle=1" value="SUBTABLA de PROYECTOS: SUBPROYECTOS/HITOS" vertex="1">
+          <mxGeometry height="70" width="270" x="470" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-13" edge="1" parent="1" source="db_proyectos" target="sync_dolibarr" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="600" as="sourcePoint" />
+            <mxPoint x="600" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-14" connectable="0" parent="G27xfmAvAOSw0uuDnlbH-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];backgroundColor=#ffffff;fontStyle=1;fontColor=#c62828;" value="BOTÓN CODA: Crear Factura/Pedido (API)" vertex="1">
+          <mxGeometry relative="1" x="-0.2" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sync_dolibarr" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=10;fillColor=#ffffff;strokeColor=#666666;" value="Tabla Sync: Dolibarr&#xa;(Clientes / Pagos)" vertex="1">
+          <mxGeometry height="50" width="140" x="530" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-15" edge="1" parent="1" source="G27xfmAvAOSw0uuDnlbH-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="G27xfmAvAOSw0uuDnlbH-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-16" edge="1" parent="1" source="db_proyectos" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.514;exitY=0.032;exitDx=0;exitDy=0;exitPerimeter=0;" target="G27xfmAvAOSw0uuDnlbH-12" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="560" as="sourcePoint" />
+            <mxPoint x="670" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G27xfmAvAOSw0uuDnlbH-17" edge="1" parent="1" source="sync_dolibarr" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dolibarr" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="560" as="sourcePoint" />
+            <mxPoint x="670" y="510" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
