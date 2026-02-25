@@ -1,11 +1,11 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.2">
   <diagram name="Página-1" id="AoGAk9HBIvqAvxBsGV9-">
-    <mxGraphModel dx="1708" dy="708" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1864" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="201" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Google Meet / Zoom" vertex="1">
-          <mxGeometry height="60" width="120" x="60" y="110" as="geometry" />
+          <mxGeometry height="60" width="120" x="60" y="130" as="geometry" />
         </mxCell>
         <mxCell id="202" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Transcriptor" vertex="1">
           <mxGeometry height="60" width="120" x="60" y="200" as="geometry" />
@@ -55,11 +55,23 @@
         <mxCell id="112" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;fontStyle=1" value="12. Entrega Final y Cierre" vertex="1">
           <mxGeometry height="60" width="200" x="330" y="1150" as="geometry" />
         </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-614" edge="1" parent="1" source="501" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="Szt3vnFu08vihGEeEnuN-613">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-620" edge="1" parent="1" source="501" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="Szt3vnFu08vihGEeEnuN-615">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="501" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;1. Briefing (Toma de Requisitos)&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Resumen estructurado de necesidades.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: No asumas nada. Usa las palabras exactas del cliente.&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="260" x="660" y="130" as="geometry" />
         </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-621" edge="1" parent="1" source="502" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="Szt3vnFu08vihGEeEnuN-615">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="502" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;2. Registro de Credenciales&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Accesos a servidores, APIs o bases de datos.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: Usa un gestor de contraseñas, nunca las guardes en texto plano.&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="260" x="660" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-622" edge="1" parent="1" source="503" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="Szt3vnFu08vihGEeEnuN-615">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="503" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;3. Alcance y Propuesta (SoW)&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Presupuesto, hitos y entregables.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: Define claramente el &quot;Fuera de Alcance&quot; para evitar problemas.&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="260" x="660" y="330" as="geometry" />
@@ -199,6 +211,59 @@
         </mxCell>
         <mxCell id="607" edge="1" parent="1" source="112" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#d6b656;endArrow=block;endFill=1;" target="507">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-607" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Amelia" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-609" edge="1" parent="1" source="Szt3vnFu08vihGEeEnuN-607" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="101">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="60" as="sourcePoint" />
+            <mxPoint x="300" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-612" edge="1" parent="1" source="Szt3vnFu08vihGEeEnuN-610" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="Szt3vnFu08vihGEeEnuN-611" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-610" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;0. Inicio&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;El inicio puede ser por llamada telefonica o reuniones minimas hasta tener una definicion del poryecto para pasar a la fase 1.&lt;br&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="660" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-624" edge="1" parent="1" source="Szt3vnFu08vihGEeEnuN-611" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Szt3vnFu08vihGEeEnuN-623" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-611" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;- Se genera cliente en coda y dolibarr. &lt;br&gt;- Se crea el proyecto, se envía agenda Amelia&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="1070" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-626" edge="1" parent="1" source="Szt3vnFu08vihGEeEnuN-613" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Szt3vnFu08vihGEeEnuN-625" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-613" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;- Se enlaza con Transkriptor meet de amelia&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="1070" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-627" edge="1" parent="1" source="Szt3vnFu08vihGEeEnuN-615" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Szt3vnFu08vihGEeEnuN-625">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-631" edge="1" parent="1" source="Szt3vnFu08vihGEeEnuN-615" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="Szt3vnFu08vihGEeEnuN-630">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-615" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;- Se hablan los 3 puntos, se genera con plantilla de transkriptor y se intrtoducen en coda&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="1070" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-623" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="Pack Amelia&lt;br&gt;Pack Dolicoda" vertex="1">
+          <mxGeometry height="60" width="120" x="1440" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-625" parent="1" style="rounded=1;whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="Pack transcriptor" vertex="1">
+          <mxGeometry height="60" width="120" x="1430" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-628" edge="1" parent="1" source="504" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=260;exitDy=65;exitPerimeter=0;" target="Szt3vnFu08vihGEeEnuN-629" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="920" y="690" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-629" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;- Draw.io&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="1070" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="Szt3vnFu08vihGEeEnuN-630" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;- Presupuesto en DOLIBARR&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;- Creación de subporyectos/hitos&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="280" x="1070" y="360" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
