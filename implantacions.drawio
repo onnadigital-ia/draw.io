@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.3">
   <diagram name="Página-1" id="AoGAk9HBIvqAvxBsGV9-">
-    <mxGraphModel dx="1864" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1653" dy="667" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -28,14 +28,8 @@
         <mxCell id="103" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="3. Recepción de Información" vertex="1">
           <mxGeometry height="60" width="200" x="330" y="250" as="geometry" />
         </mxCell>
-        <mxCell id="104" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="4. Elaboración de Propuesta" vertex="1">
+        <mxCell id="104" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="4. Elaboración de Propuesta (Aprobación y 1er Pago)" vertex="1">
           <mxGeometry height="60" width="200" x="330" y="350" as="geometry" />
-        </mxCell>
-        <mxCell id="105" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="5. Aprobación y 1er Pago" vertex="1">
-          <mxGeometry height="60" width="200" x="330" y="450" as="geometry" />
-        </mxCell>
-        <mxCell id="106" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=#ffffff;strokeColor=#000000;" value="6. Automatización de Setup" vertex="1">
-          <mxGeometry height="50" width="240" x="310" y="550" as="geometry" />
         </mxCell>
         <mxCell id="107" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;" value="7. Estructuración del Proyecto" vertex="1">
           <mxGeometry height="60" width="200" x="330" y="650" as="geometry" />
@@ -61,6 +55,9 @@
         <mxCell id="Szt3vnFu08vihGEeEnuN-620" edge="1" parent="1" source="501" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="Szt3vnFu08vihGEeEnuN-615">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="H4mQLv_ZU3pXxnDFZRfX-610" edge="1" parent="1" source="501" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=260;exitDy=65;exitPerimeter=0;" target="H4mQLv_ZU3pXxnDFZRfX-607">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="501" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;1. Briefing (Toma de Requisitos)&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Resumen estructurado de necesidades.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: No asumas nada. Usa las palabras exactas del cliente.&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="260" x="660" y="130" as="geometry" />
         </mxCell>
@@ -76,14 +73,17 @@
         <mxCell id="503" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;3. Alcance y Propuesta (SoW)&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Presupuesto, hitos y entregables.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: Define claramente el &quot;Fuera de Alcance&quot; para evitar problemas.&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="260" x="660" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="504" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;4. Diagrama de Arquitectura&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Mapa visual de conexiones (n8n, APIs).&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: Haz una versión técnica y otra simple para el cliente.&lt;/i&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="260" x="660" y="630" as="geometry" />
+        <mxCell id="H4mQLv_ZU3pXxnDFZRfX-613" edge="1" parent="1" source="504" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="H4mQLv_ZU3pXxnDFZRfX-612" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="504" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;4. Diagrama de Arquitectura (AUDITORIA)&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Mapa visual de conexiones (n8n, APIs).&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color: rgb(102, 102, 102);&quot;&gt;💡 Tip: Haz una versión técnica y otra simple para el cliente.&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="660" y="440" as="geometry" />
         </mxCell>
         <mxCell id="505" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;5. Backlog de Tareas&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Listado de tareas técnicas asignadas.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: Regla de las 8h. Si una tarea tarda más, divídela en dos.&lt;/i&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="260" x="660" y="730" as="geometry" />
+          <mxGeometry height="100" width="260" x="670" y="760" as="geometry" />
         </mxCell>
-        <mxCell id="506" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;6. Documentación de Código&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Instrucciones (README), endpoints, variables.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: Escribe pensando en el programador que lo leerá en 1 año.&lt;/i&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="100" width="260" x="660" y="830" as="geometry" />
+        <mxCell id="506" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;6. Documentación de Código/ manual de uso interno&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Instrucciones (README), endpoints, variables.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color: rgb(102, 102, 102);&quot;&gt;💡 Tip: Escribe pensando en el programador que lo leerá en 1 año.&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="260" x="660" y="940" as="geometry" />
         </mxCell>
         <mxCell id="507" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacing=10;" value="&lt;b&gt;7. Manual Uso y Acta Aceptación&lt;/b&gt;&lt;hr&gt;&lt;div style=&quot;font-size:11px;&quot;&gt;Guía para el cliente + Documento de cierre.&lt;br&gt;&lt;br&gt;&lt;i style=&quot;color:#666666;&quot;&gt;💡 Tip: La firma del acta es requisito obligatorio para la última factura.&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="260" x="660" y="1130" as="geometry" />
@@ -97,14 +97,10 @@
         <mxCell id="303" edge="1" parent="1" source="103" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="104">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="304" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="105">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="305" edge="1" parent="1" source="105" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="106">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="306" edge="1" parent="1" source="106" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="107">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="304" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="107">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="450" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="307" edge="1" parent="1" source="107" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeWidth=2;" target="108">
           <mxGeometry relative="1" as="geometry" />
@@ -148,22 +144,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="404" edge="1" parent="1" source="203" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;" target="106">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="240" y="440" />
-              <mxPoint x="240" y="575" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="405" edge="1" parent="1" source="204" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;" target="106">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="240" y="740" />
-              <mxPoint x="240" y="575" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
         <mxCell id="406" edge="1" parent="1" source="204" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#666666;endArrow=classic;endFill=1;" target="107">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
@@ -200,7 +180,7 @@
         <mxCell id="603" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#d6b656;endArrow=block;endFill=1;" target="503">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="604" edge="1" parent="1" source="107" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#d6b656;endArrow=block;endFill=1;" target="504">
+        <mxCell id="604" edge="1" parent="1" source="107" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#d6b656;endArrow=block;endFill=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="505">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="605" edge="1" parent="1" source="108" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#d6b656;endArrow=block;endFill=1;" target="505">
@@ -260,10 +240,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Szt3vnFu08vihGEeEnuN-629" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;- Draw.io&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="280" x="1070" y="660" as="geometry" />
+          <mxGeometry height="60" width="280" x="1070" y="470" as="geometry" />
         </mxCell>
         <mxCell id="Szt3vnFu08vihGEeEnuN-630" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#CCFFE6;strokeColor=#d6b656;spacing=10;" value="&lt;span style=&quot;font-size: 11px;&quot;&gt;- Presupuesto en DOLIBARR&lt;br&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 11px;&quot;&gt;- Creación de subporyectos/hitos&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="280" x="1070" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="H4mQLv_ZU3pXxnDFZRfX-607" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;spacing=10;" value="INFO DE LA EMPRESA (cotilleos, estructura, informatica...) definir tamaño del proyecto/empresa" vertex="1">
+          <mxGeometry height="60" width="210" x="920" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="H4mQLv_ZU3pXxnDFZRfX-611" edge="1" parent="1" source="104" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;html=1;strokeColor=#d6b656;endArrow=block;endFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="504">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="H4mQLv_ZU3pXxnDFZRfX-612" parent="1" style="whiteSpace=wrap;html=1;align=left;fillColor=#fff2cc;strokeColor=#d6b656;spacing=10;" value="facturable si es complejo" vertex="1">
+          <mxGeometry height="25" width="160" x="710" y="572" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
